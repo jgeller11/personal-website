@@ -1,3 +1,8 @@
 body {
     margin: 20px;
+    font-family: helvetica;
+}
+
+.bigTitle {
+    font-size: 3em;
 }
