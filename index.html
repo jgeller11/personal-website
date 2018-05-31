@@ -45,7 +45,7 @@
                 var scrollamount = (scrolltop / windowheight) // get amount scrolled in percent of screen
 
                 var ratio = windowwidth/windowheight;
-                opener.style.backgroundSize = (windowheight*3/2*(1+scrollamount)) + 'px ' + (windowheight*(1+scrollamount)) + 'px'
+                opener.style.backgroundSize = (windowheight*2*(1+scrollamount)) + 'px ' + (windowheight*(1+scrollamount)) + 'px'
                 box1.style.top = -scrollamount * 100 + 100 + '%'
                 /*
                 if ((scrollamount) > 1) {
