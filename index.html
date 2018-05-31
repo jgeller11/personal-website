@@ -37,7 +37,7 @@
                 var scrollamount = (scrolltop / windowheight) // get amount scrolled in percent of screen
 
                 opener.style.top = -scrollamount * 25 + '%'
-                if ((windowheight - scrolltop) < 67) {
+                if ((scrolltop) > 100) {
                     menubar.style.background = "white";
                     menubar.style.color = "black";
                     menubar.style.borderBottomColor = "black";
