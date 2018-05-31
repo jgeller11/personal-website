@@ -2,8 +2,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <title> Jonathan Geller</title>
+        <link rel='shortcut icon' href='icon.png' type='image/x-icon' />
     </head>
-    <body onload="parallax">
+    <body onload="parallax()">
         <ul class="navbar" id="navbar">
             <li> home </li>
             <li> projects </li>
@@ -11,8 +12,8 @@
         </ul>
         <div class="openImage" id="openImage"></div>
         <div class="boxThing" id="box1">
-            <h1> What is this? </h1>
-            <p> Well, Jon actually has no idea what he's doing, but his cool girlfriend made this picture so that's pretty cool!! </p>
+            <h1 class="sellerText"> What is this? </h1>
+            <p class="sellerText"> Well, Jon actually has no idea what he's doing, but his cool girlfriend made this picture so that's pretty cool!! </p>
 
         </div>
 
@@ -36,13 +37,15 @@
 
             var scrollheight = document.body.scrollHeight // height of entire document
             var windowheight = window.innerHeight // height of browser window
-
+            var windowwidth = window.innerWidth
             function parallax() {
                 var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
                 var scrollamount = (scrolltop / windowheight) // get amount scrolled in percent of screen
 
-                opener.style.top = -scrollamount * 15 + '%'
+                var ratio = windowwidth/windowheight;
+                opener.style.backgroundSize = (windowheight*3/2*(1+scrollamount)) + 'px ' + (windowheight*(1+scrollamount)) + 'px'
                 box1.style.top = -scrollamount * 100 + 100 + '%'
+
                 if ((scrolltop) > 100) {
                     menubar.style.background = "white";
                     menubar.style.color = "black";
@@ -56,7 +59,7 @@
                     menubar.style.color = "white";
                     menubar.style.borderBottomColor = "white";
                     menubar.style.borderBottomStyle = "none";
-                    menubar.style.borderBottomWidth = "0px"
+                    menubar.style.borderBottomWidth = "1px"
                 }
             }
 
