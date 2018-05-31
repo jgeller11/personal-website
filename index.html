@@ -47,14 +47,19 @@
                 var ratio = windowwidth/windowheight;
                 opener.style.backgroundSize = (windowheight*3/2*(1+scrollamount)) + 'px ' + (windowheight*(1+scrollamount)) + 'px'
                 box1.style.top = -scrollamount * 100 + 100 + '%'
-
+                /*
+                if ((scrollamount) > 1) {
+                    menubar.style.boxShadow = "0px 0px 10px 10px white"
+                } else {
+                    menubar.style.boxShadow = "none"
+                }
+                */
                 if ((scrolltop) > 100) {
                     menubar.style.background = "white";
                     menubar.style.color = "black";
                     menubar.style.borderBottomColor = "black";
                     menubar.style.borderBottomStyle = "solid";
                     menubar.style.borderBottomWidth = "1px"
-
 
                 } else {
                     menubar.style.background = "rgba(255,255,255,0)";
