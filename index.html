@@ -46,6 +46,7 @@
 
                 var ratio = windowwidth/windowheight;
                 opener.style.backgroundSize = (windowheight*2*(1+scrollamount)) + 'px ' + (windowheight*(1+scrollamount)) + 'px'
+                opener.style.top = -scrollamount*10 + '%'
                 box1.style.top = -scrollamount * 100 + 100 + '%'
                 /*
                 if ((scrollamount) > 1) {
