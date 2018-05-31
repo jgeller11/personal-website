@@ -9,7 +9,10 @@
             <li> projects </li>
             <li> other </li>
         </ul>
-        <div class="openImage" id="openImage">
+        <div class="openImage" id="openImage"></div>
+        <div class="boxThing" id="box1">
+            <h1> What is this? </h1>
+            <p> Well, Jon actually has no idea what he's doing, but his cool girlfriend made this picture so that's pretty cool!! </p>
 
         </div>
 
@@ -29,6 +32,7 @@
 
             var opener = document.getElementById('openImage')
             var menubar = document.getElementById('navbar')
+            var box1 = document.getElementById('box1')
 
             var scrollheight = document.body.scrollHeight // height of entire document
             var windowheight = window.innerHeight // height of browser window
@@ -37,17 +41,22 @@
                 var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
                 var scrollamount = (scrolltop / windowheight) // get amount scrolled in percent of screen
 
-                opener.style.top = -scrollamount * 25 + '%'
+                opener.style.top = -scrollamount * 15 + '%'
+                box1.style.top = -scrollamount * 100 + 100 + '%'
                 if ((scrolltop) > 100) {
                     menubar.style.background = "white";
                     menubar.style.color = "black";
                     menubar.style.borderBottomColor = "black";
+                    menubar.style.borderBottomStyle = "solid";
+                    menubar.style.borderBottomWidth = "1px"
 
 
                 } else {
                     menubar.style.background = "rgba(255,255,255,0)";
                     menubar.style.color = "white";
                     menubar.style.borderBottomColor = "white";
+                    menubar.style.borderBottomStyle = "none";
+                    menubar.style.borderBottomWidth = "0px"
                 }
             }
 
