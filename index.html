@@ -8,14 +8,14 @@
         <ul class="navbar" id="navbar">
             <li> home </li>
             <li> projects </li>
-            <li> other </li>
+            <a href="cv.pdf"><li> CV </li></a>
         </ul>
         <div class="openImage" id="openImage"></div>
         <div class="boxThing" id="box1">
             <h1 class="sellerText"> Who am I? </h1>
-            <p class="sellerText"> I'm Jonathan Geller, a fifteen-year-old student from Madison, CT. I first started learning about web design in middle school, and I've been interested in it ever since. I'm finally ready to work on bigger projects, so all I need is something to do. That's where you come in:</p>
-            <h2 class="sellerText"> Why should you work with me? </h2>
-            <p class="sellerText"> You've probably heard of services like Squarespace and Wordpress, and you might be wondering why you should trust a high school kid to make your business's website. While these are great services, they cater to a particular audience. If you're  looking to set up an entire online shopping experience, then you're probably better off looking somewhere else, but if you want a simple website with more control over what you can do, I can help you. I'm not trying to make money with this venture, just trying to get practice, so I'll be able to deliver the same professional quality for a fraction of the price.</p>
+            <p class="sellerText"> I'm Jonathan Geller, a fifteen-year-old student from Madison, CT. Are you looking for <a href="cv.pdf">my cv</a>?</p>
+            <!-- <h2 class="sellerText"> Why should you work with me? </h2>
+            <p class="sellerText"> You've probably heard of services like Squarespace and Wordpress, and you might be wondering why you should trust a high school kid to make your business's website. While these are great services, they cater to a particular audience. If you're  looking to set up an entire online shopping experience, then you're probably better off looking somewhere else, but if you want a simple website with more control over what you can do, I can help you. I'm not trying to make money with this venture, just trying to get practice, so I'll be able to deliver the same professional quality for a fraction of the price.</p> -->
 
         </div>
 
@@ -47,7 +47,7 @@
                 var ratio = windowwidth/windowheight;
                 opener.style.backgroundSize = (windowheight*2*(1+scrollamount)) + 'px ' + (windowheight*(1+scrollamount)) + 'px'
                 opener.style.top = -scrollamount*10 + '%'
-                box1.style.top = -scrollamount * 100 + 100 + '%'
+                box1.style.top = -scrollamount * 100 + 40 + '%'
                 /*
                 if ((scrollamount) > 1) {
                     menubar.style.boxShadow = "0px 0px 10px 10px white"
@@ -55,7 +55,7 @@
                     menubar.style.boxShadow = "none"
                 }
                 */
-                if ((scrolltop-windowheight) > -54) {
+                if ((scrolltop-(0.4*windowheight)) > -54) {
                     menubar.style.background = "white";
                     menubar.style.color = "black";
                     menubar.style.borderBottomColor = "black";
