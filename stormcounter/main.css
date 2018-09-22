@@ -49,4 +49,6 @@ body {
     height: 10%;
     background: lightgrey;
     border-radius: 5px;
+    outline: none;
+    border: none;
 }
