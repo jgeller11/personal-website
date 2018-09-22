@@ -55,5 +55,5 @@ body {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     font-family: helvetica;
-    font-size: 30;
+    /* font-size: 10; */
 }
