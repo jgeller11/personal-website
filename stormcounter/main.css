@@ -33,7 +33,7 @@ body {
 
 .storm {
     -webkit-animation: hue 5s infinite linear;
-    color: blue;
+    color: lightblue;
 }
 
 .increment {
