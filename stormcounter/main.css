@@ -54,4 +54,6 @@ body {
     border: none;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    font-family: helvetica;
+    font-size: 160;
 }
