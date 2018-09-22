@@ -10,7 +10,7 @@
 }
 
 .topthird {
-    height: 50%;
+    height: 40%;
     width: 100%;
     /* background: lightblue; */
     text-align:center;
@@ -55,5 +55,5 @@ body {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     font-family: helvetica;
-    font-size: 10em;
+    font-size: 3em;
 }
