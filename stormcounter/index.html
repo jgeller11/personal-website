@@ -12,7 +12,7 @@
         </div>
         <div class="counter" style="left: 34%">
             <button onclick="pluss()" class="increment"> + </button>
-            <h1 style="color: grey; font-family: helvetica; font-weight: 100;font-size:80;" id="storm"> 0 </h1>
+            <h1 class="storm" style=" font-family: helvetica; font-weight: 100;font-size:80;" id="storm"> 0 </h1>
             <button onclick="minuss()" class="increment"> - </button>
         </div>
         <div class="counter" style="left: 67%">
@@ -21,4 +21,9 @@
             <button onclick="minusb()" class="increment"> - </button>
         </div>
     </div>
+    <button class="spell" onclick="plusr(); pluss();"> manamorphose (rr) </button>
+    <button class="spell" onclick="plusb(); pluss();"> manamorphose (rb) </button>
+    <button class="spell" onclick="minusr(); plusb(); plusb(); pluss();"> manamorphose (bb) </button>
+    <button class="spell" onclick="plusr(); plusr(); pluss();"> ritual </button>
+
 </body>
