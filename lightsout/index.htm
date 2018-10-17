@@ -13,10 +13,25 @@
         opacity: 1;
     }
 }
+.linkClass{
+    -webkit-appearance: none;
+    color: black;
+    position: absolute;
+    font-size: 3em;
+    font-family: helvetica;
+    right:0;
+    top: 70%;
+    text-decoration: none;
+}
+
+.linkclass:hover{
+    background: lightgrey;
+}
+
 .select{
 	position: absolute;
 	right: 0;
-	top: 50%;
+	top: 40%;
 	font-size: 4em;
 	font-family: helvetica;
 	outline: none;
@@ -33,7 +48,7 @@
 .clear{
 	position: absolute;
 	right: 0;
-	top: 75%;
+	top: 55%;
 	-webkit-appearance: none;
 	font-family: helvetica;
 	font-size: 4em;
@@ -130,6 +145,7 @@ function flip(i,j) {
 </select>
 <input type="button" value="clear" class="clear" onclick="field(document.forms[0].level.value)">
 </form>
+<p class="linkClass" ><a style="color: black;" href="lightsout.py" target="blank">view code</a></p>
 
 <div id="field" style="width: 600px; z-index: 20; height:600px; background-color:#fff"><table id="t" width="100%" height="100%" border="1" cellpadding="0" cellspacing="0" ></table></div>
 
