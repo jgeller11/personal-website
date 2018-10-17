@@ -49,7 +49,6 @@ while counter < 2**n:
                 solution+='□'
             else:
                 solution+='■'
-        # print(solution)
         numSolutions += 1
         avgClicks=(avgClicks*(numSolutions-1)+clicks)/numSolutions
         if clicks < minClicks:
@@ -70,8 +69,3 @@ if numSolutions > 1:
 else:
     print('One solution found:')
     print(record[0]+': '+str(minClicks)+' clicks.')
-
-    # for x in range(n):
-    #     row = []
-    #     for y in range(n):
-    #         row+
