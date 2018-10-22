@@ -25,15 +25,7 @@ for n in range (lowerlimit, upperlimit+1):
         A.append(row)
     # transform this into a numpy array q to calculate determinant
     q = np.array(A)
-    # calculate the determinant. if det(q) = 0, then the matrix is not invertible and therefore not always solvable. here, i check if det(q) < 0.00001 because i have found that for higher values of n, even for a zero determinant, it is often returned as 10^-31 or something similar for rounding errors. this specific cutoff may very well introduce errors into my calculations, but i'm not all that worried about it for the low n-values i have been checking
-
-
-    # if (abs(np.linalg.det(q))<0.00001):
-    #     print(str(n)+' is not invertible')
-    # else:
-    #     print(str(n)+' is invertible')
-    #haha this doesn't work whoops
-
+    #check the rank of matrix q, if it is less than n^2 then it is not invertible
     if (np.linalg.matrix_rank(q)<n**2):
         print(str(n)+' is not invertible')
         solutions.append(n)
