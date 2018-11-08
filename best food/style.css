@@ -1,0 +1,58 @@
+button {
+    width: 35%;
+    text-align: center;
+    font-family: helvetica;
+    display: inline-block;
+    outline: none;
+    border:solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin:none;
+    font-size: 2em;
+    font-weight: 100
+
+}
+body{
+    margin: none;
+    padding:none;
+    text-align:center;
+}
+#first {
+    font-size: 2em;
+}
+
+#second {
+    font-size: 1.7em;
+}
+
+#third {
+    font-size: 1.5em;
+}
+
+#fourth {
+    font-size: 1.3em;
+}
+
+#fifth {
+    font-size: 1.1em;
+}
+
+.result {
+    font-family: helvetica;
+    font-weight: 100
+}
+
+#or {
+    font-family: helvetica;
+    font-weight: 100;
+    display: inline;
+    padding: 20px;
+}
+
+h1 {
+    font-family: helvetica;
+    font-weight: 100;
+    font-size: 2.5em;
+}
