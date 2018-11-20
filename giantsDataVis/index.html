@@ -1,0 +1,116 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <script src="sMain.js"></script> -->
+    <title> A Lifetime of Football</title>
+</head>
+<body style="margin: -10px;; padding: none; background: white;">
+    <div style="background: lightblue;margin: none; padding: 5%;">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br>
+        <div id="1"><h1> On November 20th, 1964, David Geller was born. </h1></div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="2" class="hidden"> <h1>On November 24th, 1964, the New York Football Giants lost 41-17 to the Pittsburgh Steelers, the beggining of a five-game losing streak. </h1></div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="3" class="hidden"> <h1>Fourteen years later, Giants fans had had enough of the bad football that had plagued the team for so long, so they called for a change.</h1></div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="4" class="hidden"> <h1>So, <i>how'd they do?</i></h1></div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h1> Sacks:</h1>
+    <p> The clear great Giant of the era is Lawrence Taylor, but for all the talk about his ability as a linebacker, do the stats show it? Well, the short answer is: <i> yes</i>.</p>
+    <img src="sacks.png" class="graph">
+    <p> The ten year spike in NYG sacks in the 80's lines up perfectly with L.T.'s career. However, since then the tables have turned, and it seems every non-Giant linebacker is practically an L.T. when facing the Giant O.L., right? </p>
+    <img src="sacked.png" class="graph">
+    <p> Sadly, it seems that Eli gets sacked almost as often as L.T. sacked the opposing quarterback in his prime. Not great news for the Giants. </p>
+    <h1> Quarterback Performance: </h1>
+    <img src="completion.png" class="graph">
+    <p> On this graph, Eli really does seem like an all-time great: his pass completion is increasing rapidly, setting a new franchise record every couple of years.
+    <img src="passYds.png" class="graph">
+    <p> Here, too, Eli really seems to be ahead of any previous Giants QB. Surely, part of this is due to an overall increase in passing yardage per game, but the growth is really impressive.
+    <h1> Rushing Game:</h1>
+    <p> The Giants rushing game has certainly taken a hit over the last few years:</p>
+    <img src="rushYds.png" class="graph">
+    <p> Maybe Saquon will bring that back up, but maybe it'll take a new offensive line</p>
+    <h1> Penalties:</h1>
+    <img src="penalties.png" class="graph">
+    <h1> Interceptions:</h1>
+    <img src="interceptions.png" class="graph">
+    <h1> Overall Performance:</h1>
+    <p> How have the Giants done as a team? What have been their best and worst runs? Have they been weak on the road? What teams have been particularly tough to beat?</p>
+    <img src="winPercentage.png" class="graph">
+    <img src="streaks.png" class="graph">
+    <h1> 12 games:</h1>
+    <p> The longest Giants win streak of your lifetime: a run carrying them through the playoffs and right to their victory over the Denver Broncos for their first Super Bowl Title.</p>
+    <h1> 9 games:</h1>
+    <p> The longest losing streak: a slow nine weeks leading from the beginning of the 1976 season all the way to its culmination: a depressing 9-3 loss at the hands of the Dallas Cowboys</p>
+    <img src="pointsFor.png" class="graph">
+    <img src="pointsAgainst.png" class="graph">
+    <p> The Giants defense seems to handle the road well. Their offense? Maybe not so much.</p>
+    <p> So maybe after fifty-four years of variably played football, it's hard to sum up the team. But hey...</p>
+    <img src="opponents.png" class="graph">
+    <h2><i> At least we always beat the Jets.</i></h2>
+    <br>
+    <h1 style-"font-size:6em;"> Happy birthday, Dad</h1>
+    <h1> Here's to fifty-four more years of slightly better football.</h1>
+    <h1 style="text-align: right;"> Love,</h1>
+    <h1 style="text-align: right;"> Jonathan</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        window.requestAnimationFrame = window.requestAnimationFrame
+         || window.mozRequestAnimationFrame
+         || window.webkitRequestAnimationFrame
+         || window.msRequestAnimationFrame
+         || function(f){setTimeout(f, 1000/60)}
+
+        var scrolldiv1 = document.getElementById('1')
+        var scrolldiv2 = document.getElementById('2')
+        var scrolldiv3 = document.getElementById('3')
+        var scrolldiv4 = document.getElementById('4')
+        // var scrolldiv5 = document.getElementById('5')
+
+        var scrollheight = document.body.scrollHeight // height of entire document
+        var windowheight = window.innerHeight // height of browser window
+
+        function parallax(){
+             var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
+             var scrollamount = (scrolltop / windowheight) // get amount scrolled in percent of screen
+
+
+    //             scrolldiv2.style.top = ((3 - ((scrollamount-.2) * 2)))*100 + '%'
+    //             scrolldiv3.style.top = ((4 - ((scrollamount-.2) * 3)))*100 + '%'
+    //             scrolldiv4.style.top = ((5 - ((scrollamount-.2) * 4)))*100 + '%'
+             scrolldiv2.style.opacity=(2*scrollamount).toString()
+             scrolldiv3.style.opacity=(2*scrollamount-1.7).toString()
+             scrolldiv4.style.opacity=(2*scrollamount-2.5).toString()
+        }
+
+        window.addEventListener('scroll', function(){ // on page scroll
+         requestAnimationFrame(parallax) // call parallax() on next available screen paint
+        }, false)
+
+        window.addEventListener('resize', function(){ // on window resize
+         var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
+         var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrolled (in %)
+        }, false)
+    </script>
+</body>
+</html>
