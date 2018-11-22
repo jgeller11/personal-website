@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+        <title> Dictionary Game</title>
+    </head>
+    <body style="font-family: helvetica; text-align: center;">
+        <h1 id="wordForRound" style="font-size: 4em; opacity: 0;"></h1>
+        <div id="hideThis">
+            <input type="textarea" placeholder="Enter Word Here" style="font-weight: 700; font-size: 4em; display: inline;" id="word">
+            <button onclick="confirm()" style="font-size: 4em;" id="confirmButton">Confirm Word</button>
+            <br>
+            <p></p>
+            <br>
+            <input placeholder="Put Definition Here" id="newDefinition" type="text" name="firstname" value="">
+            <button onclick="addDef()">Add Defintion</button>
+            <br><br><button onclick="showDef()">Show All Defintions</button>
+        </div>
+        <div id="definitionListContainer">
+        </div>
+    </body>
+</html>

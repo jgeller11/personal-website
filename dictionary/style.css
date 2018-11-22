@@ -1,0 +1,8 @@
+button {
+    outline:none;
+    display: inline-block;
+    border-radius: 0px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
