@@ -18,7 +18,7 @@ function showDef(){
     var i;
     var shuffledList = shuffle(definitionList)
     for (i=0; i<definitionList.length; i++){
-        document.getElementById('definitionListContainer').innerHTML += "<p><b>"+wordWord+": </b>"+shuffledList[i]+".</p>"
+        document.getElementById('definitionListContainer').innerHTML += "<p style='display: inline'><b>"+wordWord+": </b>"+shuffledList[i]+".</p><input placeholder='people voting for this definition'><br>"
     }
     document.getElementById('confirmButton').style.display='None'
     // document.getElementById('wordForRound').style.display='None'
