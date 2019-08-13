@@ -1,0 +1,12 @@
+body {
+    background: white;
+    padding: 20px;
+    font-family: helvetica;
+    font-weight: 100;
+    margin: 0;
+    text-align: center
+}
+
+audio{
+    width: 500px;
+}
