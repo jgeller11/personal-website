@@ -1,87 +1,19 @@
 <html>
     <head>
+        <title> Kenny and Berty </title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title> Jonathan Geller</title>
-        <link rel='shortcut icon' href='icon.png' type='image/x-icon' />
+        <link rel='shortcut icon' href='https://cdn0.iconfinder.com/data/icons/sports-icons/110/American-Football-512.png' type='image/x-icon' />
+
     </head>
-    <body onload="parallax()">
-        <ul class="navbar" id="navbar">
-            <li> home </li>
-            <li> projects </li>
-            <a href="cv.pdf"><li> CV </li></a>
-        </ul>
-        <div class="openImage" id="openImage"></div>
-        <div class="boxThing" id="box1">
-            <h1 class="sellerText"> Who am I? </h1>
-            <p class="sellerText"> I'm Jonathan Geller, a sixteen-year-old student from Madison, CT. I mostly use this website to host my projects for personal use. Are you looking for <a href="cv.pdf">my cv</a>?</p>
-            <!-- <h2 class="sellerText"> Why should you work with me? </h2>
-            <p class="sellerText"> You've probably heard of services like Squarespace and Wordpress, and you might be wondering why you should trust a high school kid to make your business's website. While these are great services, they cater to a particular audience. If you're  looking to set up an entire online shopping experience, then you're probably better off looking somewhere else, but if you want a simple website with more control over what you can do, I can help you. I'm not trying to make money with this venture, just trying to get practice, so I'll be able to deliver the same professional quality for a fraction of the price.</p> -->
+    <body>
 
-        </div>
-
-
-        <!-- <h1 class="bigTitle"> Jonathan Geller</h1>
-        <p> hello</p> -->
-        <!-- <img src="testImage.jpg"> -->
-
-        <script>
-            window.requestAnimationFrame = window.requestAnimationFrame ||
-                window.mozRequestAnimationFrame ||
-                window.webkitRequestAnimationFrame ||
-                window.msRequestAnimationFrame ||
-                function(f) {
-                    setTimeout(f, 1000 / 60)
-                }
-
-            var opener = document.getElementById('openImage')
-            var menubar = document.getElementById('navbar')
-            var box1 = document.getElementById('box1')
-
-            var scrollheight = document.body.scrollHeight // height of entire document
-            var windowheight = window.innerHeight // height of browser window
-            var windowwidth = window.innerWidth
-            function parallax() {
-                var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
-                var scrollamount = (scrolltop / windowheight) // get amount scrolled in percent of screen
-
-                var ratio = windowwidth/windowheight;
-                opener.style.backgroundSize = (windowheight*2*(1+scrollamount)) + 'px ' + (windowheight*(1+scrollamount)) + 'px'
-                opener.style.top = -scrollamount*10 + '%'
-                box1.style.top = -scrollamount * 100 + 40 + '%'
-                /*
-                if ((scrollamount) > 1) {
-                    menubar.style.boxShadow = "0px 0px 10px 10px white"
-                } else {
-                    menubar.style.boxShadow = "none"
-                }
-                */
-                if ((scrolltop-(0.4*windowheight)) > -56) {
-                    menubar.style.background = "white";
-                    menubar.style.color = "black";
-                    menubar.style.borderBottomColor = "black";
-                    menubar.style.borderBottomStyle = "solid";
-                    menubar.style.borderBottomWidth = "1px"
-
-                } else {
-                    menubar.style.background = "rgba(255,255,255,0)";
-                    menubar.style.color = "white";
-                    menubar.style.borderBottomColor = "white";
-                    menubar.style.borderBottomStyle = "none";
-                    menubar.style.borderBottomWidth = "1px"
-                }
-            }
-
-
-            window.addEventListener('scroll', function() { // on page scroll
-                requestAnimationFrame(parallax) // call parallax() on next available screen paint
-            }, false)
-
-            window.addEventListener('resize', function() { // on window resize
-                var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
-                var scrollamount = (scrolltop / (scrollheight - windowheight)) * 100 // get amount scrolled (in %)
-                imag.style.left = ((100 - int(imag.style.width)) / 2).toString + '%'
-            }, false)
-
-        </script>
+        <h1>The Kenny and Berty Show</h1>
+        <h3> Episode 1</h3>
+        <audio controls>
+            <source src="epone.mp3" type="audio/mp3">
+        </audio>
+        <br><br>
+        <p> The first installment of the Kenny and Berty podcasts discusses the incredible trio of the rams wide receivers (), an in-depth review on two of our league mates teams, Jonny and Eric, and finally top 3 moments of our summer</p>
+        <img src='draftboard.jpg' style="width: 60%;"/>
     </body>
 </html>
