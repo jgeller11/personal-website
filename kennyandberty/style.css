@@ -14,4 +14,31 @@ body {
 
 audio{
     width: 500px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: top ease 0.3s, box-shadow ease 0.3s, left ease 0.3s;
+}
+
+audio:hover{
+     top: -10px;
+     box-shadow: 10px 10px 10px 0px grey;
+     left: -10px;
+
+}
+
+
+
+img{
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: top ease 0.3s, box-shadow ease 0.3s, left ease 0.3s;
+
+}
+
+img:hover{
+     top: -10px;
+     left: -10px;
+     box-shadow: 10px 10px 10px 0px grey;
 }
