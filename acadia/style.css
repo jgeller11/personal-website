@@ -57,7 +57,7 @@ a{
     background: rgba(0,255,255,0);
     margin: none;
     font-size: 1.1em;
-    transition: background 0.5s;
+    transition: background 0.5s, color 0.5s;
     font-weight: 100;
     box-sizing: border-box;
 }
@@ -66,6 +66,11 @@ a{
 .navbar li:hover {
     background-color: black;
     color:white;
+}
+
+.active {
+    background-color: white;
+    color: blue;
 }
 
 img{
