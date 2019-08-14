@@ -68,10 +68,9 @@ a{
     color:white;
 }
 
-.active {
-    background-color: white;
-    color: blue;
-}
+/* .active {
+    text-decoration: underline;
+} */
 
 img{
     position: relative;
