@@ -1,0 +1,64 @@
+body {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: helvetica;
+    font-weight: 100;
+    min-height: 1000%;
+    text-align: center;
+    /* padding: 10%; */
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+td {
+    height: 50px;
+    width: 100px;
+}
+
+.jon {
+    background: lightblue;
+}
+
+.julian {
+    background: lightgreen;
+}
+
+.eric {
+    background: green;
+}
+
+.daniel {
+    background: pink;
+}
+
+.oliver {
+    background: red;
+}
+
+.jonny {
+    background: gray;
+}
+
+.max {
+    background: yellow;
+}
+
+.ben {
+    background: magenta;
+}
+
+.adam {
+    background: orange;
+}
+
+.pablo {
+    background: cyan;
+}
+
+.waiver {
+    background: darkgrey;
+}
